@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+body{
+    background-color: wheat;
+}
+.container{
+    
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.piano {
+    display: flex;
+
+}
+
+.key {
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+
+.white {
+    --width: 50px;
+
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    background-color: #CCC;
+
+}
+
+.black {
+    --width: 30px;
+    background-color: black;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
+}
+
+.black.active {
+    background-color: #333;
+ 
+}
+
+.social-menu p{
+    text-align: center;
+    padding-bottom: 40px;
+    color:black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -120px;
+
+}
+.social-menu ul{
+    position: absolute;
+    left: 50%;
+    padding: 0 px;
+     margin-top: -15px ;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+    margin:0 5px;
+  }
+  
+  .social-menu ul li .fa{
+     font-size:25px;
+     line-height: 50px;
+     transition: .6s;
+     color: #000;
+  
+    }
+    .social-menu ul li .fa:hover{ 
+        color: #fff;
+  
+    }
+  
+    .social-menu ul li a {
+        position: relative;
+        display:block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        justify-content: center;
+        text-align: center;
+        transition: .6s;
+    }
+  .social-menu ul li a:hover {
+      transform:translate(0,-10px);
+  
+  }
+
+  .social-menu ul li:nth-child(1) a:hover{
+      background-color: #0077B5;
+  }
+  .social-menu ul li:nth-child(2) a:hover{
+      background-color: #cd201f;
+  }
+  .social-menu ul li:nth-child(3) a:hover{
+      background-color: #131418;
+  }
+  
+  .social-menu ul li:nth-child(4) a:hover{
+      background-color: black;
+  }
+ .social-menu ul li:nth-child(5) a:hover{
+    background-color: #eb4924;
+}
